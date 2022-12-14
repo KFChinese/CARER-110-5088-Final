@@ -50,7 +50,9 @@ iframe {
 	/* ...and bring it back again */
 	margin-left: -100%;
 }
-
+a{
+	color:#aaa
+}
 
 @keyframes fadein {
     from {
