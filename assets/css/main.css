@@ -33,13 +33,33 @@ body {
 	line-height: 1;
 	
 }
-.fade-in-image { animation: fadeIn 10s; }
+.fade-in-image { animation: fadein 20s;
+	overflow: hidden;
+	width: 100%;
+	/* Keep it the right aspect-ratio */
+	aspect-ratio: 16/9;
+	/* No clicking/hover effects */
+	pointer-events: none;
 
 
-@keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-  }
+}
+iframe {
+	/* Extend it beyond the viewport... */
+	width: 300%;
+	height: 100%;
+	/* ...and bring it back again */
+	margin-left: -100%;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 ol, ul {
 	list-style: none;
 }
